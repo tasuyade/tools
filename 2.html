@@ -10,6 +10,7 @@
     <title>2桁</title>
 </head>
 <body>
+<div id="remove">
     <audio>
         <source src="alerm.mp3" type="audio/mp3">
         <source src="alerm.ogg" type="audio/ogg">
@@ -24,9 +25,10 @@
         <button onclick="doclick()">OK</button>
         <a href="index.html">Back</a>
     </div>
-    <div id="An"><p>A:<br /><input id="q1b" type="text" required minlength="1" maxlength="2" size="3"><br /><input id="q2" type="text" required minlength="1" maxlength="2" size="3"><br /></p>
-    <button onclick="">答える</button></div>
-    <p id="date">(取得できへんかった...)</p>
+    <div id="An"><p>A:<br /><input id="q1" type="text" required minlength="1" maxlength="2" size="3"><br /><input id="q2" type="text" required minlength="1" maxlength="2" size="3"><br /></p>
+    <button id="Ab" onclick="an()">答える</button></div>
+    <div id="kn"></div>
+    </d><p id="date">(取得できへんかった...)</p>
     <p id="cr"><small>copyright &copy; 2023 Laughin</small></p>
 </body>
 </html>
