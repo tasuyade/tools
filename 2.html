@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <link href="icon.ico" rel="icon">
+    <link href="style.css" rel="stylesheet">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="script2.js"></script>
+    <title>2桁</title>
+</head>
+<body>
+    <audio>
+        <source src="alerm.mp3" type="audio/mp3">
+        <source src="alerm.ogg" type="audio/ogg">
+        <source src="alerm.wav" type="audio/wav">
+    </audio>
+    <h1>2桁の素因数分解</h1>
+    <div id="ta">
+        <p>時間を入力してください(半角)</p>
+        <p>時間：　<input id="t1" type="text" required minlength="1" maxlength="2" size="3"><br /></p>
+        <p>　分：　<input id="t2" type="text" required minlength="1" maxlength="2" size="3"><br /></p>
+
+        <button onclick="doclick()">OK</button>
+        <a href="index.html">Back</a>
+    </div>
+    <div id="An"><p>A:<br /><input id="q1b" type="text" required minlength="1" maxlength="2" size="3"><br /><input id="q2" type="text" required minlength="1" maxlength="2" size="3"><br /></p>
+    <button onclick="">答える</button></div>
+    <p id="date">(取得できへんかった...)</p>
+    <p id="cr"><small>copyright &copy; 2023 Laughin</small></p>
+</body>
+</html>
