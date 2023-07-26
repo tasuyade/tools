@@ -7,7 +7,18 @@
     <link href="icon.ico" rel="icon" >
     <link href="style.css" rel="stylesheet">
     <script src="jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
+    <script>
+        $(function () {
+           setInterval(function () {
+           let date = new Date();
+           let h = date.getHours();
+           let m = date.getMinutes();
+           $("#date").html("現在時刻は" + h + "時" + m + "分です。");
+    }, 999);
+    $("body").fadeIn(1500);
+
+   });
+    </script>
     <title>素因数分解アラーム</title>
 </head>
 <body>
