@@ -17,14 +17,16 @@ function an(){
     } else {
       if(va3 == PN[ran1] && va4 == PN[ran2]){
         alert("正解！！");
+        $("audio").get(0).pause();
         $("#remove").hide();
         $('#remove').before('<h1 id="GM">Good morning!</h1>');
       }else if(va3 == PN[ran2] && va4 == PN[ran1]){
         alert("正解！！");
+        $("audio").get(0).pause();
         $("#remove").hide();
          $('#remove').before('<h1 id="GM">Good morning!</h1>');
       }else{
-        alert("ばかめ");
+        alert("違います");
       }
     }
 }
