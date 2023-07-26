@@ -16,12 +16,10 @@ function an(){
         alert("数値を入力してください");
     } else {
       if(va3 == PN[ran1] && va4 == PN[ran2]){
-        alert("正解！！");
         $("audio").get(0).pause();
         $("#remove").hide();
         $('#remove').before('<h1 id="GM">Good morning!</h1>');
       }else if(va3 == PN[ran2] && va4 == PN[ran1]){
-        alert("正解！！");
         $("audio").get(0).pause();
         $("#remove").hide();
          $('#remove').before('<h1 id="GM">Good morning!</h1>');
@@ -43,7 +41,7 @@ function doclick() {
             hm = String(va1) + "時" + String(va2) + "分";
             
             qa= ransu();
-            $('#kn').before('<h1 id="so">' + qa + '</h1>');
+            $('#An').before('<h1 id="so">' + qa + '</h1>');
             $('#kn').before("<h2>アラームは" + hm + "にセットされています。</h2>");
             $("#so").hide();
             tap = 0;
