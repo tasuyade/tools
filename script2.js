@@ -19,7 +19,14 @@ function an(){
         $("audio").get(0).pause();
         $("#remove").hide();
         $('#remove').before('<h1 id="GM">Good morning!</h1>');
-        
+        let abs = 0;
+    　　　setInterval(function () {
+           if(abs == 5){
+               location.href='2.html'
+           }else{
+               abs += 1;
+           }
+            }, 1000);
       }else if(va3 == PN[ran2] && va4 == PN[ran1]){
         $("audio").get(0).pause();
         $("#remove").hide();
@@ -27,7 +34,9 @@ function an(){
         let abs = 0;
     　　　setInterval(function () {
            if(abs == 5){
-               
+               location.href='2.html'
+           }else{
+               abs += 1;
            }
             }, 1000);
       }else{
