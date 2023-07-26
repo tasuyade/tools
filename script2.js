@@ -19,10 +19,17 @@ function an(){
         $("audio").get(0).pause();
         $("#remove").hide();
         $('#remove').before('<h1 id="GM">Good morning!</h1>');
+        
       }else if(va3 == PN[ran2] && va4 == PN[ran1]){
         $("audio").get(0).pause();
         $("#remove").hide();
-         $('#remove').before('<h1 id="GM">Good morning!</h1>');
+        $('#remove').before('<h1 id="GM">Good morning!</h1>');
+        let abs = 0;
+    　　　setInterval(function () {
+           if(abs == 5){
+               
+           }
+            }, 1000);
       }else{
         alert("違います");
       }
