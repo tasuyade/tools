@@ -76,8 +76,8 @@ function doclick() {
                 nhm = String(h)+"時"+String(m)+"分";
                 if (hm == nhm && tap == 0) {
                     tap += 1;
-                    $("audio").get(0).play();
-                    $("audio").get(0).loop = true;
+                    $("#audio").get(0).play();
+                  //  $("#audio").get(0).loop = true;
                     $("#so").show();
                     $("#An").show();
                 }
@@ -103,7 +103,7 @@ $(function () {
 </head>
 <body>
 <div id="remove">
-    <audio>
+    <audio id="audio">
         <source src="alerm.wav" type="audio/wav">
         <source src="alerm.mp3" type="audio/mp3">
         <source src="alerm.ogg" type="audio/ogg">
