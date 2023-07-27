@@ -77,7 +77,7 @@ function doclick() {
                 if (hm == nhm && tap == 0) {
                     tap += 1;
                     $("#audio").get(0).play();
-                  //  $("#audio").get(0).loop = true;
+                    $("#audio").get(0).loop = true;
                     $("#so").show();
                     $("#An").show();
                 }
@@ -104,8 +104,8 @@ $(function () {
 <body>
 <div id="remove">
     <audio id="audio">
-        <source src="alerm.wav" type="audio/wav">
         <source src="alerm.mp3" type="audio/mp3">
+        <source src="alerm.wav" type="audio/wav">
         <source src="alerm.ogg" type="audio/ogg">
     </audio>
     <h1>素因数分解アラーム(初心者向け)</h1>
