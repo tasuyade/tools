@@ -74,7 +74,7 @@ function doclick() {
             tap = 0;
             setInterval(function () {
                 nhm = String(h)+"時"+String(m)+"分";
-                if (hm == nhm && tap == 1) {
+                if (hm == nhm && tap <= 1) {
                     tap += 1;
                     $("audio").get(0).play();
                     $("audio").get(0).loop = true;
