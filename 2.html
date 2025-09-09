@@ -72,6 +72,7 @@ function doclick() {
             $('#kn').before("<h2>アラームは" + hm + "にセットされています。</h2>");
             $("#so").hide();
             tap = 0;
+            audio.load();
             setInterval(function () {
                 nhm = String(h)+"時"+String(m)+"分";
                 if (hm == nhm && tap <= 1) {
@@ -122,6 +123,7 @@ $(function () {
     <p id="cr"><small>copyright &copy; 2023 Laughin</small></p>
 </body>
 </html>
+
 
 
 
