@@ -57,7 +57,8 @@ function an(){
 }
 
 function doclick() {
-
+    var url = "https://tasuyade.github.io/tools/alerm.mp3";
+    var audio = new Audio(url);
     if (va1 == "" || va2 == "") {
         alert("数値を入力してください");
     } else {
@@ -72,12 +73,12 @@ function doclick() {
             $('#kn').before("<h2>アラームは" + hm + "にセットされています。</h2>");
             $("#so").hide();
             tap = 0;
-            $("audio").load();
+            audio.load();
             setInterval(function () {
                 nhm = String(h)+"時"+String(m)+"分";
                 if (hm == nhm && tap <= 1) {
                     tap += 1;
-                    $("audio").get(0).play();
+                    audio.play();
                     $("audio").get(0).loop = true;
                     $("#so").show();
                     $("#An").show();
@@ -104,9 +105,11 @@ $(function () {
 </head>
 <body>
 <div id="remove">
+    <!--
     <audio src="alerm.wav" preload=”metadata”>
         このブラウザでは対応していません
     </audio>
+    -->
     <h1>素因数分解アラーム(初心者向け)</h1>
     <div id="ta">
         <p>時間を入力してください(半角)</p>
@@ -123,6 +126,7 @@ $(function () {
     <p id="cr"><small>copyright &copy; 2023 Laughin</small></p>
 </body>
 </html>
+
 
 
 
