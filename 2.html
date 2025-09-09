@@ -79,7 +79,9 @@ function doclick() {
                 if (hm == nhm && tap <= 1) {
                     tap += 1;
                     audio.play();
+                    /*
                     $("audio").get(0).loop = true;
+                    */
                     $("#so").show();
                     $("#An").show();
                 }
@@ -105,11 +107,9 @@ $(function () {
 </head>
 <body>
 <div id="remove">
-    <!--
-    <audio src="alerm.wav" preload=”metadata”>
+    <audio src="alerm.wav" preload=”metadata” loop>
         このブラウザでは対応していません
     </audio>
-    -->
     <h1>素因数分解アラーム(初心者向け)</h1>
     <div id="ta">
         <p>時間を入力してください(半角)</p>
@@ -126,6 +126,7 @@ $(function () {
     <p id="cr"><small>copyright &copy; 2023 Laughin</small></p>
 </body>
 </html>
+
 
 
 
